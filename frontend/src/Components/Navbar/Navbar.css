@@ -1,0 +1,37 @@
+.navbar{
+    background-color: rgb(72, 62, 62);
+    height: 3em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navbar nav{
+    min-width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.navbar a::after{
+    background-color: aliceblue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    opacity: 0;
+    transition: all 1ms ease-in-out;
+    border-radius: 10px;
+    content: "";
+    height: 2px;
+}
+.navbar a:hover::after{
+    opacity: 100;
+}
